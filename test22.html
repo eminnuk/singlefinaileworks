@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+        * {margin: 0px; padding: 0px;}
+
+        body {background-color: rgba(255, 244, 215, 1); overflow-x: hidden;}
+
+        .header {
+            display: flex;
+            width: 1440px; margin-left: auto; margin-right: auto;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            color: rgba(182, 77, 66, 1);
+            line-height: 110px;
+            flex-basis: 0;
+            flex-grow: 4;
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 3px;
+        }
+    
+         .logo {
+            flex-basis: 0;
+            flex-grow: 1;
+        }
+
+        .header .navi {
+            flex-basis: 0;
+            flex-grow: 4;
+            z-index: 1;
+        }
+
+        .header li {
+            float: right;
+            list-style: none;
+            margin-right: 35px;
+            font-size: 36px;
+            line-height: 110px;
+            font-family: 'Anton', sans-serif;
+        }
+
+        .navi .place a {
+            color: rgba(214, 163, 151, 1);
+            text-decoration: none;
+        }
+
+        .navi .surfing a {
+            color: rgba(214, 163, 151, 1);
+            text-decoration: none;
+        }
+
+        .navi .menu a {
+            color: rgba(179, 36, 30, 1);
+            text-decoration: none;
+        }
+
+        .navi .place a:hover {
+            color: rgba(179, 36, 30, 1);
+        }
+
+        .navi .surfing a:hover {
+            color: rgba(179, 36, 30, 1);
+        }
+
+        .main {
+            width: 1235px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 80px;
+        }
+
+        .pizza {
+    margin-top: 80px;
+    width: 600px;
+    position: relative;
+  }
+
+  .pizimgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .pizimg1 {
+    border: 5px dashed rgba(182, 77, 66, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.pizimg2 {
+    border: 5px dashed rgba(182, 77, 66, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.pizimg3 {
+    border: 5px dashed rgba(182, 77, 66, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.pizimg4 {
+    border: 5px dashed rgba(182, 77, 66, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.pizimg5 {
+    border: 5px dashed rgba(182, 77, 66, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.pizimg6 {
+    border: 5px dashed rgba(182, 77, 66, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 10px;
+}
+
+  .pizmain1 {
+    position: absolute;
+    top:-150px;
+    left: 700px;
+    opacity: 0;
+  }
+  .pizmain11 {
+    position: absolute;
+    top:0px;
+    left: 700px;
+    opacity: 0;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+  }
+  .pizmain22 {
+    position: absolute;
+    top:0px;
+    left: 700px;
+    opacity: 0;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+  }
+  .pizmain33 {
+    position: absolute;
+    top:0px;
+    left: 700px;
+    opacity: 0;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+  }
+  .pizmain44 {
+    position: absolute;
+    top:0px;
+    left: 700px;
+    opacity: 0;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+  }
+  .pizmain55 {
+    position: absolute;
+    top:0px;
+    left: 700px;
+    opacity: 0;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+  }
+  .pizmain66 {
+    position: absolute;
+    top:0px;
+    left: 700px;
+    opacity: 0;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .pizza h2 {
+            margin-right: 850px;
+            margin-bottom: 30px;
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 1px;
+            font-weight: 400;
+            color: rgba(179, 36, 30, 1);
+        }
+
+  .pizza h1 {
+    width: 100%;
+    background-color: rgba(179, 36, 30, 1);
+    color: rgba(255, 244, 215, 1);
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  .pizmain2 {
+    position: absolute;
+    top:-150px;
+    left: 700px;
+    opacity: 0;
+  }
+  .pizmain3 {
+    position: absolute;
+    top:-150px;
+    left: 700px;
+    opacity: 0;
+  }
+  .pizmain4 {
+    position: absolute;
+    top:-150px;
+    left: 700px;
+    opacity: 0;
+  }
+  .pizmain5 {
+    position: absolute;
+    top:-150px;
+    left: 700px;
+    opacity: 0;
+  }
+  .pizmain6 {
+    position: absolute;
+    top:-150px;
+    left: 700px;
+    opacity: 0;
+  }
+  .pizmain7 {
+    position: absolute;
+    top:-150px;
+    left: 700px;
+    opacity: 0;
+  }
+  .pizmain8 {
+    position: absolute;
+    top:-150px;
+    left: 700px;
+    opacity: 0;
+  }
+  .pizmain9 {
+    position: absolute;
+    top:-150px;
+    left: 700px;
+    opacity: 0;
+  }
+
+  @keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+  @keyframes bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0) scaleX(3);
+    transform: translate3d(3000px, 0, 0) scaleX(3);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0) scaleX(1);
+    transform: translate3d(-25px, 0, 0) scaleX(1);
+  }
+
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0) scaleX(0.98);
+    transform: translate3d(10px, 0, 0) scaleX(0.98);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0) scaleX(0.995);
+    transform: translate3d(-5px, 0, 0) scaleX(0.995);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ani1 {
+    opacity: 1;
+    animation: bounceInRight 2s;
+}
+
+.ani2 {
+    opacity: 1;
+    animation: bounceInRight 3s;
+}
+
+.ani3 {
+    opacity: 1;
+    animation: fadeInDown 3s;
+}
+
+.ani4 {
+    opacity: 1;
+    animation: fadeInDown 3.5s;
+}
+
+
+.photo {
+    opacity: 1;
+}
+        .footer {
+            width: 100%;
+            height: 89px;
+            margin-top: 120px;
+            background-image: url(https://i.postimg.cc/Y0YTKf8w/Group-15.png);
+        }
+
+        .footersns {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footersns .sns {
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 30px;
+        }
+
+        .footertext {
+            color: rgba(179, 36, 30, 1);
+            margin-top: 30px;
+            font-family: 'Noto Sans KR', sans-serif;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .beerchoi1 {
+            font-size: 20px;
+            background-color: rgba(182, 77, 66, 1);
+            color: rgba(255, 244, 215, 1);
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            padding: 2px;
+            margin-top: 30px;
+            transition: width 0.5s ease-in-out;
+        }
+
+        .beerchoi2 {
+            font-size: 20px;
+            background-color: rgba(182, 77, 66, 1);
+            color: rgba(255, 244, 215, 1);
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            padding: 2px;
+            margin-top: 20px;
+            transition: width 0.5s ease-in-out;
+        }
+
+        .beerchoi3 {
+            font-size: 20px;
+            background-color: rgba(182, 77, 66, 1);
+            color: rgba(255, 244, 215, 1);
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            padding: 2px;
+            margin-top: 20px;
+            transition: width 0.5s ease-in-out;
+        }
+
+        .beerchoi4 {
+            font-size: 20px;
+            background-color: rgba(182, 77, 66, 1);
+            color: rgba(255, 244, 215, 1);
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            padding: 2px;
+            margin-top: 20px;
+            transition: width 0.5s ease-in-out;
+        }
+
+        .beer h2 {
+            margin-right: 850px;
+            margin-bottom: 30px;
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 1px;
+            font-weight: 400;
+            color: rgba(179, 36, 30, 1);
+        }
+
+        .beerchoi1:hover {width: 300px;}
+        .beerchoi2:hover {width: 300px;}
+        .beerchoi3:hover {width: 300px;}
+        .beerchoi4:hover {width: 300px;}
+
+        .stay {width: 300px;}
+
+        .beer {
+            position: relative;
+            margin-top: 100px;
+        }
+
+        .beerimg {
+            width: 220px;
+            background-color: rgba(255, 244, 215, 1);
+        }
+
+        .beerimg img {
+            margin-left: 10px;
+        }
+
+        .beer h1 {
+            width: 200px;
+            margin-left: 10px;
+            background-color: rgba(179, 36, 30, 1);
+            color: rgba(255, 244, 215, 1);
+            font-size: 20px;
+            font-family: 'Noto Sans KR', sans-serif;
+            text-align: center;
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+
+        .beerimgs1 {
+            position: absolute;
+            top: 20px;
+            left: 500px;
+            display: flex;
+            width: 960px;
+            justify-content: space-evenly;
+            align-items: end;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .beerimgs2 {
+            position: absolute;
+            top: 20px;
+            left: 500px;
+            display: flex;
+            width: 960px;
+            justify-content: space-evenly;
+            align-items: end;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        .beerimgs3 {
+            position: absolute;
+            top: 20px;
+            left: 500px;
+            display: flex;
+            width: 960px;
+            justify-content: space-evenly;
+            align-items: end;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .beerimgs4 {
+            position: absolute;
+            top: 20px;
+            left: 500px;
+            display: flex;
+            width: 960px;
+            justify-content: space-evenly;
+            align-items: end;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .beerimgs5 {opacity: 1;}
+
+        .pizzamain {
+            width: 1000px;
+            height: 190px;
+            background-image: url(https://i.postimg.cc/kMVXBcTx/Group-17.png);
+            position: absolute;
+            top: 160px;
+            left: 800px;
+            animation: fadeInRight 2s;
+        }
+
+        .beermain {
+            width: 1000px;
+            height: 89px;
+            background-image: url(https://i.postimg.cc/y85HRJvk/Group-18.png);
+            position: absolute;
+            top: 80px;
+            left: 600px;
+            animation: fadeInRight 3s;
+        }
+        @keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fries {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.frs h2 {
+    margin-right: 850px;
+            margin-bottom: 30px;
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 1px;
+            font-weight: 400;
+            color: rgba(179, 36, 30, 1);
+            margin-top: 130px;
+}
+
+.list {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .game {
+            flex: 0 0 200px;
+            position: relative;
+            height: 200px;
+            opacity: 0.7;
+        }
+
+        .game img { width: 100%;}
+
+        .game .info {
+            position: absolute;
+            color: rgb(246, 246, 255);
+            background: rgba(182, 77, 66, 0.8);
+            font-family: 'Noto Sans KR', sans-serif;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            top: 0px;
+            padding: 15px;
+            box-sizing: border-box;
+            opacity: 1;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .game:hover .info { opacity: 0;}
+
+        .game:hover {opacity: 1;}
+
+        @media (max-width:390px){
+      .header {
+        display: flex;
+      width: 390px; margin-left: auto; margin-right: auto;
+      }
+
+      .header h1 {
+      display: none;
+        }
+
+      .logo img {
+        width: 55px;
+        height: 55px;
+        margin-left: 10px;
+      }
+
+      .header .navi {
+            flex-basis: 0;
+            flex-grow: 5;
+            margin-right: 20px;
+            z-index: 1;
+        }
+
+        .header li {
+            float: right;
+            list-style: none;
+            margin-right: 10px;
+            font-size: 24px;
+            line-height: 55px;
+            font-family: 'Anton', sans-serif;
+        }
+
+        .main {
+            width: 390px;
+            margin-left: auto;
+            margin-right: auto;
+        } 
+
+        .pizza {
+    margin-top: 80px;
+    width: 390px;
+    position: relative;
+  }
+
+  .pizimgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .pizimg1 {
+    border: 5px dashed rgba(182, 77, 66, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.pizimg2 {
+    border: 5px dashed rgba(182, 77, 66, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.pizimg3 {
+    border: 5px dashed rgba(182, 77, 66, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.pizimg4 {
+    border: 5px dashed rgba(182, 77, 66, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.pizimg5 {
+    border: 5px dashed rgba(182, 77, 66, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.pizimg6 {
+    border: 5px dashed rgba(182, 77, 66, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+  .pizmain1 {
+    position: absolute;
+    top:-150px;
+    left: 100px;
+    opacity: 0;
+  }
+  .pizmain11 {
+    position: absolute;
+    top:0px;
+    left: 700px;
+    opacity: 0;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+  }
+  .pizmain22 {
+    position: absolute;
+    top:0px;
+    left: 700px;
+    opacity: 0;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+  }
+  .pizmain33 {
+    position: absolute;
+    top:0px;
+    left: 700px;
+    opacity: 0;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+  }
+  .pizmain44 {
+    position: absolute;
+    top:0px;
+    left: 700px;
+    opacity: 0;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+  }
+  .pizmain55 {
+    position: absolute;
+    top:0px;
+    left: 700px;
+    opacity: 0;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+  }
+  .pizmain66 {
+    position: absolute;
+    top:0px;
+    left: 700px;
+    opacity: 0;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .pizza h2 {
+            margin-right: 850px;
+            margin-bottom: 30px;
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 1px;
+            font-weight: 400;
+            color: rgba(179, 36, 30, 1);
+        }
+
+  .pizza h1 {
+    width: 100%;
+    background-color: rgba(179, 36, 30, 1);
+    color: rgba(255, 244, 215, 1);
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  .pizmain2 {
+    position: absolute;
+    top:-150px;
+    left: 700px;
+    opacity: 0;
+  }
+  .pizmain3 {
+    position: absolute;
+    top:-150px;
+    left: 700px;
+    opacity: 0;
+  }
+  .pizmain4 {
+    position: absolute;
+    top:-150px;
+    left: 700px;
+    opacity: 0;
+  }
+  .pizmain5 {
+    position: absolute;
+    top:-150px;
+    left: 700px;
+    opacity: 0;
+  }
+  .pizmain6 {
+    position: absolute;
+    top:-150px;
+    left: 700px;
+    opacity: 0;
+  }
+  .pizmain7 {
+    position: absolute;
+    top:-150px;
+    left: 700px;
+    opacity: 0;
+  }
+  .pizmain8 {
+    position: absolute;
+    top:-150px;
+    left: 700px;
+    opacity: 0;
+  }
+  .pizmain9 {
+    position: absolute;
+    top:-150px;
+    left: 700px;
+    opacity: 0;
+  }
+
+  .beer {height: 800px;}
+
+  .beerchoi1 {opacity: 0;}
+.beerchoi2 {opacity: 0;}
+.beerchoi3 {opacity: 0;}
+.beerchoi4 {opacity: 0;}
+
+  .beerimg {
+            width: 220px;
+            background-color: rgba(255, 244, 215, 1);
+        }
+
+        .beerimg img {
+            margin-left: 10px;
+            width: 100px;
+        }
+
+        .beer h1 {
+            width: 100px;
+            margin-left: 10px;
+            background-color: rgba(179, 36, 30, 1);
+            color: rgba(255, 244, 215, 1);
+            font-size: 14px;
+            font-family: 'Noto Sans KR', sans-serif;
+            text-align: center;
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+
+        .beerimgs1 {
+            position: absolute;
+            top: 100px;
+            left: 50px;
+            display: flex;
+            width: 370px;
+            justify-content: space-evenly;
+            align-items: end;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .beerimgs2 {
+            position: absolute;
+            top: 280px;
+            left: 10px;
+            display: flex;
+            width: 370px;
+            justify-content: space-evenly;
+            align-items: end;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        .beerimgs3 {
+            position: absolute;
+            top: 460px;
+            left: 50px;
+            display: flex;
+            width: 370px;
+            justify-content: space-evenly;
+            align-items: end;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .beerimgs4 {
+            position: absolute;
+            top: 640px;
+            left: 50px;
+            display: flex;
+            width: 370px;
+            justify-content: space-evenly;
+            align-items: end;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+        }
+
+  .game {
+            flex: 0 0 100px;
+            position: relative;
+            height: 100px;
+            opacity: 0.7;
+            margin-top: 10px;
+        }
+
+        .game .info {
+          font-size: 10px;
+        }
+
+        .footer {
+        width: 390px;
+        height: 40px;
+        margin-top: 50px;
+        background-image: url(https://i.postimg.cc/Y0YTKf8w/Group-15.png);
+        background-size: cover;
+      }
+
+      .sns img {
+        width: 40px;
+      }
+
+      .footertext {
+        font-size: 10px;
+      }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>SINGLEFIN AILEWORKS</h1>
+        <div class="logo"><a href="index.html#"><img src="https://i.postimg.cc/430QDb7Y/Mask-group.png" width="110px" height="110px"></a></div>
+        <div class="navi">
+        <ul>
+            <div class="place"><li><a href="test24.html#">PLACE</a></li></div>
+            <div class="surfing"><li><a href="test23.html#">SURFING</a></li></div>
+            <div class="menu"><li><a href="test22.html#">MENU</a></li></div>
+        </ul>
+        </div>
+      </div>
+    
+      <div class="main">
+
+        <div class="pizza">
+            <h2>PIZZA</h2>
+            <div class="pizimgs">
+                <div class="pizimg1"><img src="https://i.postimg.cc/CMvBwhsP/image.png" width="140px" height="140px"></div>
+                <div class="pizimg2"><img src="https://i.postimg.cc/cJMC20Jc/image.png" width="140px" height="140px"></div>
+                <div class="pizimg3"><img src="https://i.postimg.cc/SN3nzg5c/image.png" width="140px" height="140px"></div>
+                <div class="pizimg4"><img src="https://i.postimg.cc/V6gSrmQN/image.png" width="140px" height="140px"></div>
+                <div class="pizimg5"><img src="https://i.postimg.cc/7Z5SFGvn/image.png" width="140px" height="140px"></div>
+                <div class="pizimg6"><img src="https://i.postimg.cc/2SnSLrnf/image.png" width="140px" height="140px"></div>
+            </div>
+
+            <div class="pizzamain"></div>
+            <div class="pizmain1">
+                <img src="https://i.postimg.cc/CKWp4hzJ/image.png" width="700px" height="700px">
+            </div>
+
+            <div class="pizmain11">
+                <img src="https://i.postimg.cc/CMvBwhsP/image.png" width="600px" height="400px">
+                <h1>시카고 클래식 피자<br>₩ 26,000</h1>
+            </div>
+            
+            <div class="pizmain2">
+                <img src="https://i.postimg.cc/QxcYKyYT/image.png" width="700px" height="700px">
+            </div>
+
+            <div class="pizmain22">
+                <img src="https://i.postimg.cc/cJMC20Jc/image.png" width="600px" height="400px">
+                <h1>페페로니 시카고 피자<br>₩ 29,500</h1>
+            </div>
+
+            <div class="pizmain3">
+                <img src="https://i.postimg.cc/kgtY9xjM/image.png" width="700px" height="700px">
+            </div>
+            <div class="pizmain33">
+                <img src="https://i.postimg.cc/SN3nzg5c/image.png" width="600px" height="400px">
+                <h1>화와이안 시카고 피자<br>₩ 29,500</h1>
+            </div>
+
+            <div class="pizmain4">
+                <img src="https://i.postimg.cc/wBp2pnyF/image.png" width="700px" height="700px">
+            </div>
+            <div class="pizmain44">
+                <img src="https://i.postimg.cc/V6gSrmQN/image.png" width="600px" height="400px">
+                <h1>양송이 화이트 피자<br>₩ 30,500</h1>
+            </div>
+
+            <div class="pizmain5">
+                <img src="https://i.postimg.cc/3RwgrhKj/image.png" width="700px" height="700px">
+            </div>
+            <div class="pizmain55">
+                <img src="https://i.postimg.cc/7Z5SFGvn/image.png" width="600px" height="400px">
+                <h1>코코넛 쉬림프 시카고 피자<br>₩ 36,500</h1>
+            </div>
+
+            <div class="pizmain6">
+                <img src="https://i.postimg.cc/28Y4cMJx/image.png" width="700px" height="700px">
+            </div>
+            <div class="pizmain66">
+                <img src="https://i.postimg.cc/2SnSLrnf/image.png" width="600px" height="400px">
+                <h1>핫 치킨 시카고 피자<br>₩ 30,500</h1>
+            </div>
+
+            <div class="pizmain7">
+                <img src="https://i.postimg.cc/Wbf1FJMJ/image.png" width="700px" height="700px">
+            </div>
+
+            <div class="pizmain8">
+                <img src="https://i.postimg.cc/Rh2CYkCL/image.png" width="700px" height="700px">
+            </div>
+
+            <div class="pizmain9">
+                <img src="https://i.postimg.cc/KYVZ4XBS/image.png" width="700px" height="700px">
+            </div>
+        </div>
+
+        <script>
+            const pizimg1 = document.querySelector('.pizimg1');
+            const pizimg2 = document.querySelector('.pizimg2');
+            const pizimg3 = document.querySelector('.pizimg3');
+            const pizimg4 = document.querySelector('.pizimg4');
+            const pizimg5 = document.querySelector('.pizimg5');
+            const pizimg6 = document.querySelector('.pizimg6');
+            const pizmain1 = document.querySelector('.pizmain1');
+            const pizmain2 = document.querySelector('.pizmain2');
+            const pizmain3 = document.querySelector('.pizmain3');
+            const pizmain4 = document.querySelector('.pizmain4');
+            const pizmain5 = document.querySelector('.pizmain5');
+            const pizmain6 = document.querySelector('.pizmain6');
+            const pizmain7 = document.querySelector('.pizmain7');
+            const pizmain8 = document.querySelector('.pizmain8');
+            const pizmain9 = document.querySelector('.pizmain9');
+            const pizmain11 = document.querySelector('.pizmain11');
+            const pizmain22 = document.querySelector('.pizmain22');
+            const pizmain33 = document.querySelector('.pizmain33');
+            const pizmain44 = document.querySelector('.pizmain44');
+            const pizmain55 = document.querySelector('.pizmain55');
+            const pizmain66 = document.querySelector('.pizmain66');
+        
+            pizimg1.addEventListener('mouseenter', () => {
+                pizmain1.classList.add('ani1');
+                pizmain2.classList.add('ani2');
+                pizmain3.classList.add('ani3');
+            });
+        
+            pizimg1.addEventListener('mouseleave', () => {
+                pizmain1.classList.remove('ani1');
+                pizmain2.classList.remove('ani2');
+                pizmain3.classList.remove('ani3');
+                pizmain11.classList.remove('photo');
+            });
+
+            pizimg1.addEventListener('click', () => {
+                pizmain1.classList.remove('ani1');
+                pizmain2.classList.remove('ani2');
+                pizmain3.classList.remove('ani3');
+                pizmain11.classList.add('photo');
+            });
+
+
+            pizimg2.addEventListener('mouseenter', () => {
+                pizmain1.classList.add('ani1');
+                pizmain2.classList.add('ani2');
+                pizmain3.classList.add('ani3');
+                pizmain4.classList.add('ani4');
+            });
+        
+            pizimg2.addEventListener('mouseleave', () => {
+                pizmain1.classList.remove('ani1');
+                pizmain2.classList.remove('ani2');
+                pizmain3.classList.remove('ani3');
+                pizmain4.classList.remove('ani4');
+                pizmain22.classList.remove('photo');
+            });
+
+            pizimg2.addEventListener('click', () => {
+                pizmain1.classList.remove('ani1');
+                pizmain2.classList.remove('ani2');
+                pizmain3.classList.remove('ani3');
+                pizmain4.classList.remove('ani4');
+                pizmain22.classList.add('photo');
+            });
+
+
+            pizimg3.addEventListener('mouseenter', () => {
+                pizmain1.classList.add('ani1');
+                pizmain2.classList.add('ani2');
+                pizmain3.classList.add('ani3');
+                pizmain5.classList.add('ani4');
+            });
+        
+            pizimg3.addEventListener('mouseleave', () => {
+                pizmain1.classList.remove('ani1');
+                pizmain2.classList.remove('ani2');
+                pizmain3.classList.remove('ani3');
+                pizmain5.classList.remove('ani4');
+                pizmain33.classList.remove('photo');
+            });
+
+            pizimg3.addEventListener('click', () => {
+                pizmain1.classList.remove('ani1');
+                pizmain2.classList.remove('ani2');
+                pizmain3.classList.remove('ani3');
+                pizmain5.classList.remove('ani4');
+                pizmain33.classList.add('photo');
+            });
+
+
+            pizimg4.addEventListener('mouseenter', () => {
+                pizmain1.classList.add('ani1');
+                pizmain6.classList.add('ani2');
+                pizmain7.classList.add('ani3');
+            });
+        
+            pizimg4.addEventListener('mouseleave', () => {
+                pizmain1.classList.remove('ani1');
+                pizmain6.classList.remove('ani2');
+                pizmain7.classList.remove('ani3');
+                pizmain44.classList.remove('photo');
+            });
+
+            pizimg4.addEventListener('click', () => {
+                pizmain1.classList.remove('ani1');
+                pizmain6.classList.remove('ani2');
+                pizmain7.classList.remove('ani3');
+                pizmain44.classList.add('photo');
+            });
+
+
+            pizimg5.addEventListener('mouseenter', () => {
+                pizmain1.classList.add('ani1');
+                pizmain2.classList.add('ani2');
+                pizmain3.classList.add('ani3');
+                pizmain8.classList.add('ani4');
+            });
+        
+            pizimg5.addEventListener('mouseleave', () => {
+                pizmain1.classList.remove('ani1');
+                pizmain2.classList.remove('ani2');
+                pizmain3.classList.remove('ani3');
+                pizmain8.classList.remove('ani4');
+                pizmain55.classList.remove('photo');
+            });
+
+            pizimg5.addEventListener('click', () => {
+                pizmain1.classList.remove('ani1');
+                pizmain2.classList.remove('ani2');
+                pizmain3.classList.remove('ani3');
+                pizmain8.classList.remove('ani4');
+                pizmain55.classList.add('photo');
+            });
+
+
+            pizimg6.addEventListener('mouseenter', () => {
+                pizmain1.classList.add('ani1');
+                pizmain2.classList.add('ani2');
+                pizmain3.classList.add('ani3');
+                pizmain9.classList.add('ani4');
+            });
+        
+            pizimg6.addEventListener('mouseleave', () => {
+                pizmain1.classList.remove('ani1');
+                pizmain2.classList.remove('ani2');
+                pizmain3.classList.remove('ani3');
+                pizmain9.classList.remove('ani4');
+                pizmain66.classList.remove('photo');
+            });
+
+            pizimg6.addEventListener('click', () => {
+                pizmain1.classList.remove('ani1');
+                pizmain2.classList.remove('ani2');
+                pizmain3.classList.remove('ani3');
+                pizmain9.classList.remove('ani4');
+                pizmain66.classList.add('photo');
+            });
+        </script>
+
+        <div class="beer">
+            <h2>DRAFT BEER</h2>
+            <div class="beerchoi1">가벼운 맛</div>
+            <div class="beerchoi2">가벼운~중간 맛</div>
+            <div class="beerchoi3">중간 맛</div>
+            <div class="beerchoi4">묵직한 맛</div>
+
+            <div class="beermain"></div>
+
+            <div class="beerimgs1">
+                <div class="beerimg"><img src="https://i.postimg.cc/nh9hQLd3/4.png" width="200px"><h1>비치보이즈 라거</h1></div>
+                <div class="beerimg"><img src="https://i.postimg.cc/T1xtnhqg/8.png" width="200px"><h1>션사인 골든 에일</h1></div>
+            </div>
+
+            <div class="beerimgs2">
+                <div class="beerimg"><img src="https://i.postimg.cc/xd4rGGcH/7.png" width="200px"><h1>리얼 딸기 에일</h1></div>
+                <div class="beerimg"><img src="https://i.postimg.cc/L4vXcwY3/3.png" width="200px"><h1>바나나이젠</h1></div>
+                <div class="beerimg"><img src="https://i.postimg.cc/wv2mbvYh/9.png" width="200px"><h1>망고 쉐이크</h1></div>
+            </div>
+
+            <div class="beerimgs3">
+                <div class="beerimg"><img src="https://i.postimg.cc/wv2qdRvj/5.png" width="200px"><h1>하와이언 에일</h1></div>
+                <div class="beerimg"><img src="https://i.postimg.cc/tJr4FnQM/2.png" width="200px"><h1>쵸퍼 폐일 에일</h1></div>
+            </div>
+
+            <div class="beerimgs4">
+                <div class="beerimg"><img src="https://i.postimg.cc/GmWf5T7Z/1.png" width="200px"><h1>비엔나 스타우트</h1></div>
+                <div class="beerimg"><img src="https://i.postimg.cc/DyJTxMqZ/6.png" width="200px"><h1>경포대 더블 I.I.P.A</h1></div>
+            </div>
+
+            <div class="beertest"></div>
+        </div>
+
+        <script>
+            const beerchoi1 = document.querySelector('.beerchoi1');
+            const beerchoi2 = document.querySelector('.beerchoi2');
+            const beerchoi3 = document.querySelector('.beerchoi3');
+            const beerchoi4 = document.querySelector('.beerchoi4');
+            const beerimgs1 = document.querySelector('.beerimgs1');
+            const beerimgs2 = document.querySelector('.beerimgs2');
+            const beerimgs3 = document.querySelector('.beerimgs3');
+            const beerimgs4 = document.querySelector('.beerimgs4');
+
+
+            beerchoi1.addEventListener('click', () => {
+                beerchoi1.classList.add('stay');
+                beerimgs1.classList.add('beerimgs5');
+                beerimgs2.classList.remove('beerimgs5');
+                beerimgs3.classList.remove('beerimgs5');
+                beerimgs4.classList.remove('beerimgs5');
+                beerchoi2.classList.remove('stay');
+                beerchoi3.classList.remove('stay');
+                beerchoi4.classList.remove('stay');
+            });
+
+            beerchoi2.addEventListener('click', () => {
+                beerchoi1.classList.remove('stay');
+                beerchoi2.classList.add('stay');
+                beerimgs1.classList.remove('beerimgs5');
+                beerimgs2.classList.add('beerimgs5');
+                beerimgs3.classList.remove('beerimgs5');
+                beerimgs4.classList.remove('beerimgs5');
+                beerchoi3.classList.remove('stay');
+                beerchoi4.classList.remove('stay');
+            });
+
+            beerchoi3.addEventListener('click', () => {
+                beerchoi1.classList.remove('stay');
+                beerchoi2.classList.remove('stay');
+                beerchoi3.classList.add('stay');
+                beerimgs1.classList.remove('beerimgs5');
+                beerimgs2.classList.remove('beerimgs5');
+                beerimgs3.classList.add('beerimgs5');
+                beerimgs4.classList.remove('beerimgs5');
+                beerchoi4.classList.remove('stay');
+            });
+
+            beerchoi4.addEventListener('click', () => {
+                beerchoi1.classList.remove('stay');
+                beerchoi2.classList.remove('stay');
+                beerchoi3.classList.remove('stay');
+                beerchoi4.classList.add('stay');
+                beerimgs1.classList.remove('beerimgs5');
+                beerimgs2.classList.remove('beerimgs5');
+                beerimgs3.classList.remove('beerimgs5');
+                beerimgs4.classList.add('beerimgs5');
+            });
+
+        </script>
+
+<div class="frs"> <h2>FRIES</h2></div>
+
+        <div class="list">
+
+            <div class="game">
+                <div class="img"><img src="https://i.postimg.cc/kgwLqrPq/image.png" width="200px"></div>
+                <div class="info">
+                    <h3>프렌치 프라이즈</h3>
+                    <p>₩ 11,000</p>
+                </div>
+            </div>
+        
+            <div class="game">
+                <div class="img"><img src="https://i.postimg.cc/MTBscNNc/image.png" width="200px"></div>
+                <div class="info">
+                    <h3>옥수수 알 튀김</h3>
+                    <p>₩ 12,000</p>
+                </div>
+            </div>
+        
+            <div class="game">
+                <div class="img"><img src="https://i.postimg.cc/vZSX0Gdg/image.png" width="200px"></div>
+                <div class="info">
+                    <h3>강원 프라이즈</h3>
+                    <p>₩ 19,500</p>
+                </div>
+            </div>
+        
+            <div class="game">
+                <div class="img"><img src="https://i.postimg.cc/t47NZ8VX/image.png" width="200px"></div>
+                <div class="info">
+                    <h3>버팔로 핫 윙/봉<br>& 프라이즈</h3>
+                    <p>₩ 24,000</p>
+                </div>
+            </div>
+
+            <div class="game">
+                <div class="img"><img src="https://i.postimg.cc/65pdgFcd/image.png" width="200px"></div>
+                <div class="info">
+                    <h3>코코넛 쉬림프<br>& 프라이즈</h3>
+                    <p>₩ 29,500</p>
+                </div>
+            </div>
+        
+        </div>
+
+      </div>
+    
+      <div class="footer"></div>
+      <div class="footersns">
+        <div class="sns"> <a href="https://www.instagram.com/singlefin_aleworks/"><img src="https://i.postimg.cc/cHnTz14K/insta.png"></a> </div>
+        <div class="sns"> <a href="https://map.naver.com/p/entry/place/37160730?c=15.00,0,0,0,dh"><img src="https://i.postimg.cc/t4zhYZ7t/Rectangle-162.png"></a> </div>
+      </div>
+      <p class="footertext">이용안내 - 예약 / 단체석 / 주차 / 포장 / 무선 인터넷 / 애완동물 동반 / 남,녀 화장실 구분
+        <br>0507-1465-1175</p>
+</body>
+</html>

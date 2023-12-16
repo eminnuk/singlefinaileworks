@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+        * {margin: 0px; padding: 0px;}
+
+        body {background-color: rgba(255, 244, 215, 1);}
+
+        .header {
+            display: flex;
+            width: 1440px; margin-left: auto; margin-right: auto;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            color: rgba(182, 77, 66, 1);
+            line-height: 110px;
+            flex-basis: 0;
+            flex-grow: 4;
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 3px;
+        }
+    
+         .logo {
+            flex-basis: 0;
+            flex-grow: 1;
+        }
+
+        .header .navi {
+            flex-basis: 0;
+            flex-grow: 4;
+        }
+
+        .header li {
+            float: right;
+            list-style: none;
+            margin-right: 35px;
+            font-size: 36px;
+            line-height: 110px;
+            font-family: 'Anton', sans-serif;
+        }
+
+        .navi .place a {
+            color: rgba(179, 36, 30, 1);
+            text-decoration: none;
+        }
+
+        .navi .surfing a {
+            color: rgba(214, 163, 151, 1);
+            text-decoration: none;
+        }
+
+        .navi .menu a {
+            color: rgba(214, 163, 151, 1);
+            text-decoration: none;
+        }
+
+        .navi .surfing a:hover {
+            color: rgba(179, 36, 30, 1);
+        }
+
+        .navi .menu a:hover {
+            color: rgba(179, 36, 30, 1);
+        }
+
+        .main {
+            width: 1235px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 130px;
+        }
+
+        .text {
+            width: 1090px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-top: 130px;
+        }
+
+        .text .text1 {
+            font-size: 20px;
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 40px;
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+        }
+
+        .copyNotification {
+            position: absolute;
+            top: -55px;
+            left: 50px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: rgba(179, 36, 30, 1);
+            display: none;
+            color: rgba(255, 244, 215, 1);
+        }
+
+    .text .text1:hover .copyNotification {
+      display: block;
+    }
+
+        .footer {
+            width: 100%;
+            height: 89px;
+            margin-top: 130px;
+            background-image: url(https://i.postimg.cc/Y0YTKf8w/Group-15.png);
+        }
+
+        .footersns {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footersns .sns {
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 30px;
+        }
+
+        .footertext {
+            color: rgba(179, 36, 30, 1);
+            margin-top: 30px;
+            font-family: 'Noto Sans KR', sans-serif;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width:390px){
+      .header {
+        display: flex;
+      width: 390px; margin-left: auto; margin-right: auto;
+      }
+
+      .header h1 {
+      display: none;
+        }
+
+      .logo img {
+        width: 55px;
+        height: 55px;
+        margin-left: 10px;
+      }
+
+      .header .navi {
+            flex-basis: 0;
+            flex-grow: 5;
+            margin-right: 20px;
+        }
+
+        .header li {
+            float: right;
+            list-style: none;
+            margin-right: 10px;
+            font-size: 24px;
+            line-height: 55px;
+            font-family: 'Anton', sans-serif;
+        }
+
+        .main {
+            width: 390px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .text {
+            width: 370px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .text .text1 {
+            font-size: 12px;
+            font-family: 'Noto Sans KR', sans-serif;
+            margin-bottom: 24px;
+            width: 370px;
+        }
+
+        .copyNotification {
+            position: absolute;
+            top: -55px;
+            left: 90px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: rgba(179, 36, 30, 1);
+            display: none;
+            color: rgba(255, 244, 215, 1);
+        }
+
+        .footer {
+        width: 390px;
+        height: 40px;
+        margin-top: 50px;
+        background-image: url(https://i.postimg.cc/Y0YTKf8w/Group-15.png);
+        background-size: cover;
+      }
+
+      .sns img {
+        width: 35px;
+      }
+
+      .footertext {
+        font-size: 10px;
+      }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>SINGLEFIN AILEWORKS</h1>
+        <div class="logo"><a href="index.html#"><img src="https://i.postimg.cc/430QDb7Y/Mask-group.png" width="110px" height="110px"></a></div>
+        <div class="navi">
+        <ul>
+            <div class="place"><li><a href="test24.html#">PLACE</a></li></div>
+            <div class="surfing"><li><a href="test23.html#">SURFING</a></li></div>
+            <div class="menu"><li><a href="/test22.html#">MENU</a></li></div>
+        </ul>
+        </div>
+      </div>
+    
+      <div class="main">
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.014035173165!2d128.71993047643164!3d38.023452271923716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fdf54b1c24ee5bb%3A0x6541cb589c75265!2z7Iux6riA7ZWA7JeQ7J287JuN7Iqk!5e0!3m2!1sko!2skr!4v1701564050641!5m2!1sko!2skr" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="text">
+                <div class="text1">
+                    <p id="copy">주소: 강원도 양양군 현북면 하조대2길 48-42</p><span class="copyNotification"><h3>글을 선택하여 복사하기</h3></span>
+                    <p id="copy">상호명: (주)레이백</p>
+                    <p id="copy">대표자: 김봉철,이진도</p>
+                    <p id="copy">사업자번호: 817-81-02287</p>
+                    <p id="copy">통신판매번호: 2021-강원양양-0098</p>
+                    <p id="copy">이메일: singlefinaleworks@gmail.com</p>
+                    <p id="copy">입금계좌: (주)레이백 농협 351-1185-4237-43</p>
+                    </div>
+
+                    <script>
+                        document.getElementById('copy').addEventListener('click', function() {
+                          var textArea = document.createElement('textarea');
+                          textArea.value = this.innerText;
+                          document.body.appendChild(textArea);
+                          textArea.select();
+                          document.execCommand('copy');
+                          document.body.removeChild(textArea);
+                    
+                          alert('텍스트가 복사되었습니다!');
+                        });
+                      </script>
+            </div>
+
+      </div>
+    
+      <div class="footer"></div>
+      <div class="footersns">
+        <div class="sns"> <a href="https://www.instagram.com/singlefin_aleworks/"><img src="https://i.postimg.cc/cHnTz14K/insta.png"></a> </div>
+        <div class="sns"> <a href="https://map.naver.com/p/entry/place/37160730?c=15.00,0,0,0,dh"><img src="https://i.postimg.cc/t4zhYZ7t/Rectangle-162.png"></a> </div>
+      </div>
+      <p class="footertext">이용안내 - 예약 / 단체석 / 주차 / 포장 / 무선 인터넷 / 애완동물 동반 / 남,녀 화장실 구분
+        <br>0507-1465-1175</p>
+</body>
+</html>

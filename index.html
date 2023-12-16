@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Singlefin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <style>
+    * {margin: 0px; padding: 0px;}
+
+    body {background-color: rgba(255, 244, 215, 1);}
+
+    .header {
+      display: flex;
+      width: 1440px; margin-left: auto; margin-right: auto;
+    }
+
+    .header h1 {
+      font-size: 48px;
+      color: rgba(182, 77, 66, 1);
+      line-height: 110px;
+      flex-basis: 0;
+      flex-grow: 4;
+      font-family: 'Anton', sans-serif;
+      letter-spacing: 3px;
+
+      animation: backInLeft 2s;
+        }
+
+        @keyframes backInLeft {
+  0% {
+    -webkit-transform: translateX(-2000px) scale(0.7);
+    transform: translateX(-2000px) scale(0.7);
+    opacity: 0.7;
+  }
+
+  80% {
+    -webkit-transform: translateX(0px) scale(0.7);
+    transform: translateX(0px) scale(0.7);
+    opacity: 0.7;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+    .logo {
+      flex-basis: 0;
+      flex-grow: 1;
+
+      animation: fadeInRight 2s;
+    }
+
+    .line {
+      width: 640px;
+      height: 3px;
+      background-color: rgba(182, 77, 66, 1);
+      margin-top: 54px;
+      flex-basis: 0;
+      flex-grow: 4;
+
+      animation: fadeInRight 2s;
+    }
+
+    @keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+    .main {
+      margin-top: 80px;
+      width: 1440px; margin-left: auto; margin-right: auto;
+    }
+
+    .pizzaboy1 {
+        position: absolute;
+        margin-left: 100px;
+        
+        animation: backInLeft 6s, pizzaboy1 0.6s infinite;
+        }
+
+    .pizzaboy2 {
+        position: absolute;
+        margin-left: 100px;
+
+        animation: backInLeft 6s, pizzaboy2 0.6s infinite;
+    }
+
+     @keyframes pizzaboy1 {
+        0% {opacity: 1;}
+        50% {opacity: 1;}
+        51% {opacity: 0;}
+        99% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+     @keyframes pizzaboy2 {
+        0% {opacity: 0;}
+        50% {opacity: 0;}
+        51% {opacity: 1;}
+        99% {opacity: 1;}
+        100% {opacity: 0;}
+    }
+
+     .cta a {
+      font-size: 128px;
+      font-family: 'Anton', sans-serif;
+      letter-spacing: 6px;
+      text-decoration: none;
+      color: rgba(214, 163, 151, 1);
+      font-weight: 400;
+      text-shadow: -3px 0px rgba(179, 36, 30, 1), 0px 3px rgba(179, 36, 30, 1), 3px 0px rgba(179, 36, 30, 1), 0px -3px rgba(179, 36, 30, 1);
+    }
+
+     .cta ul {
+      list-style: none;
+      margin-left: 830px;
+    }
+
+    .footer {
+      width: 100%;
+      height: 190px;
+      margin-top: 120px;
+      background-image: url(https://i.postimg.cc/FKZDzhQt/Group-16.png);
+    }
+
+    .main .cta .menu li a:hover {
+      color: rgba(182, 77, 66, 1);
+    }
+
+    .main .cta .surfing li a:hover {
+      color: rgba(182, 77, 66, 1);
+    }
+
+    .main .cta .place li a:hover {
+      color: rgba(182, 77, 66, 1);
+    }
+
+    @media (max-width:390px){
+      .header {
+        display: flex;
+      width: 390px; margin-left: auto; margin-right: auto;
+      }
+
+      .header h1 {
+      font-size: 24px;
+      color: rgba(182, 77, 66, 1);
+      line-height: 55px;
+      flex-basis: 0;
+      flex-grow: 5;
+      font-family: 'Anton', sans-serif;
+      letter-spacing: 3px;
+      margin-left: 10px;
+
+      animation: backInLeft 2s;
+        }
+
+      .logo img {
+        width: 55px;
+        height: 55px;
+      }
+
+      .line {
+        display: none;
+      }
+
+      .main {
+      margin-top: 80px;
+      width: 390px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+      .main .pizzaboy1 {
+        display: none;
+      }
+
+      .main .pizzaboy2 {
+        display: none;
+      }
+
+      .cta a {
+        font-size: 64px;
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 6px;
+        text-decoration: none;
+        color: rgba(214, 163, 151, 1);
+        font-weight: 400;
+        text-shadow: -3px 0px rgba(179, 36, 30, 1), 0px 3px rgba(179, 36, 30, 1), 3px 0px rgba(179, 36, 30, 1), 0px -3px rgba(179, 36, 30, 1);
+      }
+
+      .cta ul {
+      list-style: none;
+      margin-left: 85px;
+    }
+
+    .footer {
+        width: 390px;
+        height: 40px;
+        margin-top: 50px;
+        background-image: url(https://i.postimg.cc/Y0YTKf8w/Group-15.png);
+        background-size: cover;
+      }
+
+      .sns img {
+        width: 35px;
+      }
+
+      .footertext {
+        font-size: 10px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>SINGLEFIN AILEWORKS</h1>
+    <div class="logo"><a href="index.html#"><img src="https://i.postimg.cc/430QDb7Y/Mask-group.png" width="110px" height="110px"></a></div>
+    <div class="line"></div>
+  </div>
+
+  <div class="main">
+    <div class="pizzaboy1"> <img src="https://i.postimg.cc/HkgPpzpG/2023-11-20-183543-2.png" width="430px"> </div>
+    <div class="pizzaboy2"> <img src="https://i.postimg.cc/nr19qnQG/2023-11-20-183543-3.png" width="435px"> </div>
+    <div class="cta">
+    <ul>
+    <div class="menu"><li><a href="test22.html#">MENU</a></li></div>
+    <div class="surfing"><li><a href="test23.html#">SURFING</a></li></div>
+    <div class="place"><li><a href="test24.html#">PLACE</a></li></div>
+    </ul>
+    </div>
+  </div>
+
+  <div class="footer"></div>
+</body>
+</html>

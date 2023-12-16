@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+        * {margin: 0px; padding: 0px;}
+
+        body {background-color: rgba(255, 244, 215, 1); overflow-x: hidden;}
+
+        .header {
+            display: flex;
+            width: 1440px; margin-left: auto; margin-right: auto;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            color: rgba(182, 77, 66, 1);
+            line-height: 110px;
+            flex-basis: 0;
+            flex-grow: 4;
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 3px;
+        }
+
+         .logo {
+            flex-basis: 0;
+            flex-grow: 1;
+        }
+
+        .header .navi {
+            flex-basis: 0;
+            flex-grow: 4;
+        }
+
+        .header li {
+            float: right;
+            list-style: none;
+            margin-right: 35px;
+            font-size: 36px;
+            line-height: 110px;
+            font-family: 'Anton', sans-serif;
+        }
+
+        .navi .place a {
+            color: rgba(214, 163, 151, 1);
+            text-decoration: none;
+        }
+
+        .navi .surfing a {
+            color: rgba(179, 36, 30, 1);
+            text-decoration: none;
+        }
+
+        .navi .menu a {
+            color: rgba(214, 163, 151, 1);
+            text-decoration: none;
+        }
+
+        .navi .place a:hover {
+            color: rgba(179, 36, 30, 1);
+        }
+
+        .navi .menu a:hover {
+            color: rgba(179, 36, 30, 1);
+        }
+
+        .main {
+            width: 1235px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 80px;
+        } 
+
+        .imgs {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 130px;
+        }
+
+        .img1 {
+            display: flex;
+            margin-left: 10px;
+            margin-right: 10px;
+            animation: img1 25s linear infinite;
+        }
+
+        .img2 {
+            display: flex;
+            margin-left: 10px;
+            margin-right: 10px;
+            animation: img2 25s linear infinite;
+        }
+
+        .img3 {
+            display: flex;
+            margin-left: 10px;
+            margin-right: 10px;
+            animation: img3 25s linear infinite;
+        }
+
+        .img4 {
+            display: flex;
+            margin-left: 10px;
+            margin-right: 10px;
+            animation: img4 25s linear infinite;
+        }
+
+        .img5 {
+            display: flex;
+            margin-left: 10px;
+            margin-right: 10px;
+            animation: img5 25s linear infinite;
+        }
+
+
+        @keyframes img1 {
+            0% {opacity: 0;
+                transform: translateX(0px) scale(0.5);
+            }
+
+            20% {opacity: 0.7;
+                transform: translateX(270px) scale(0.7);
+            }
+
+            40% {opacity: 1;
+                transform: translateX(540px) scale(1);
+            }
+
+            60% {opacity: 0.7;
+                transform: translateX(810px) scale(0.7);
+            }
+
+            80% {opacity: 0;
+                transform: translateX(1080px) scale(0.5);
+            }
+
+            100% {opacity: 0;
+                transform: translateX(0px) scale(0.5);
+            }
+
+        }
+
+        @keyframes img2 {
+            0% {opacity: 0.7;
+                transform: translateX(0px) scale(0.7);
+            }
+
+            20% {opacity: 1;
+                transform: translateX(270px) scale(1);
+            }
+
+            40% {opacity: 0.7;
+                transform: translateX(540px) scale(0.7);
+            }
+
+            60% {opacity: 0;
+                transform: translateX(810px) scale(0.5);
+            }
+
+            80% {opacity: 0;
+                transform: translateX(-270px) scale(0.5);
+            }
+
+            100% {opacity: 0.7;
+                transform: translateX(0px) scale(0.7);
+            }
+
+        }
+
+        @keyframes img3 {
+            0% {opacity: 1;
+                transform: translateX(0px) scale(1);
+            }
+
+            20% {opacity: 0.7;
+                transform: translateX(270px) scale(0.7);
+            }
+
+            40% {opacity: 0;
+                transform: translateX(540px) scale(0.5);
+            }
+
+            60% {opacity: 0;
+                transform: translateX(-540px) scale(0.5);
+            }
+
+            80% {opacity: 0.7;
+                transform: translateX(-270px) scale(0.7);
+            }
+
+            100% {opacity: 1;
+                transform: translateX(0px) scale(1);
+            }
+
+        }
+
+        @keyframes img4 {
+            0% {opacity: 0.7;
+                transform: translateX(0px) scale(0.7);
+            }
+
+            20% {opacity: 0;
+                transform: translateX(270px) scale(0.5);
+            }
+
+            40% {opacity: 0;
+                transform: translateX(-810px) scale(0.5);
+            }
+
+            60% {opacity: 0.7;
+                transform: translateX(-540px) scale(0.7);
+            }
+
+            80% {opacity: 1;
+                transform: translateX(-270px) scale(1);
+            }
+
+            100% {opacity: 0.7;
+                transform: translateX(0px) scale(0.7);
+            }
+
+        }
+
+        @keyframes img5 {
+            0% {opacity: 0;
+                transform: translateX(0px) scale(0.5);
+            }
+
+            20% {opacity: 0;
+                transform: translateX(-1080px) scale(0.5);
+            }
+
+            40% {opacity: 0.7;
+                transform: translateX(-810px) scale(0.7);
+            }
+
+            60% {opacity: 1;
+                transform: translateX(-540px) scale(1);
+            }
+
+            80% {opacity: 0.7;
+                transform: translateX(-270px) scale(0.7);
+            }
+
+            100% {opacity: 0;
+                transform: translateX(0px) scale(0.5);
+            }
+
+        }
+
+        .text {
+            width: 1090px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-top: 130px;
+        }
+
+        .text h2 {
+            margin-right: 850px;
+            margin-bottom: 30px;
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 1px;
+            font-weight: 400;
+            color: rgba(179, 36, 30, 1);
+        }
+
+        .text .text1 {
+            font-size: 20px;
+            font-family: 'Noto Sans KR', sans-serif;
+            margin-bottom: 24px;
+        }
+
+        .text .text2 {
+            font-size: 16px;
+            font-family: 'Noto Sans KR', sans-serif;
+            margin-bottom: 48px;
+            color: rgba(179, 36, 30, 1);
+            font-weight: bold;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            margin-top: 106px;
+        }
+
+        .button a {
+            text-decoration: none;
+            background-color: rgba(179, 36, 30, 1);
+            color: rgba(255, 244, 215, 1);
+            padding-left: 75px;
+            padding-right: 75px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 32px;
+            font-weight: bold;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .footer {
+            width: 100%;
+            height: 89px;
+            margin-top: 120px;
+            background-image: url(https://i.postimg.cc/Y0YTKf8w/Group-15.png);
+        }
+
+        .footersns {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footersns .sns {
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 30px;
+        }
+
+        .footertext {
+            color: rgba(179, 36, 30, 1);
+            margin-top: 30px;
+            font-family: 'Noto Sans KR', sans-serif;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width:390px){
+      .header {
+        display: flex;
+      width: 390px; margin-left: auto; margin-right: auto;
+      }
+
+      .header h1 {
+      display: none;
+        }
+
+      .logo img {
+        width: 55px;
+        height: 55px;
+        margin-left: 10px;
+      }
+
+      .header .navi {
+            flex-basis: 0;
+            flex-grow: 5;
+            margin-right: 20px;
+        }
+
+        .header li {
+            float: right;
+            list-style: none;
+            margin-right: 10px;
+            font-size: 24px;
+            line-height: 55px;
+            font-family: 'Anton', sans-serif;
+        }
+
+        .main {
+            width: 390px;
+            margin-left: auto;
+            margin-right: auto;
+        } 
+
+        .text {
+            width: 370px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .text h2 {
+            margin-bottom: 30px;
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 1px;
+            font-weight: 400;
+            color: rgba(179, 36, 30, 1);
+            font-size: 14px;
+            width: 390px;
+        }
+
+        .text .text1 {
+            font-size: 12px;
+            font-family: 'Noto Sans KR', sans-serif;
+            margin-bottom: 24px;
+            width: 370px;
+        }
+
+        .text .text2 {
+            font-size: 12px;
+            font-family: 'Noto Sans KR', sans-serif;
+            margin-bottom: 48px;
+            color: rgba(179, 36, 30, 1);
+            font-weight: bold;
+            width: 390px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        #mar{
+            margin-right: 200px;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            margin-top: 106px;
+        }
+
+        .button a {
+            text-decoration: none;
+            background-color: rgba(179, 36, 30, 1);
+            color: rgba(255, 244, 215, 1);
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .footer {
+        width: 390px;
+        height: 40px;
+        margin-top: 50px;
+        background-image: url(https://i.postimg.cc/Y0YTKf8w/Group-15.png);
+        background-size: cover;
+      }
+
+      .sns img {
+        width: 40px;
+      }
+
+      .footertext {
+        font-size: 10px;
+      }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>SINGLEFIN AILEWORKS</h1>
+        <div class="logo"><a href="index.html#"><img src="https://i.postimg.cc/430QDb7Y/Mask-group.png" width="110px" height="110px"></a></div>
+        <div class="navi">
+        <ul>
+            <div class="place"><li><a href="test24.html#">PLACE</a></li></div>
+            <div class="surfing"><li><a href="test23.html#">SURFING</a></li></div>
+            <div class="menu"><li><a href="test22.html#">MENU</a></li></div>
+        </ul>
+        </div>
+      </div>
+
+      <div class="imgs">
+        <div class="img1"><img src="https://i.postimg.cc/zXNtdTx9/2023-12-11-013320-1.png" width="250px" height="250px"></div>
+        <div class="img2"><img src="https://i.postimg.cc/hv1rF32N/2023-12-11-013531-1.png" width="250px" height="250px"></div>
+        <div class="img3"><img src="https://i.postimg.cc/0NS7RBQZ/2023-12-11-013641.png" width="250px" height="250px"></div>
+        <div class="img4"><img src="https://i.postimg.cc/tT5Z9QHd/2023-12-11-013729.png" width="250px" height="250px"></div>
+        <div class="img5"><img src="https://i.postimg.cc/ZK9RMy0x/2023-12-11-013802.png" width="250px" height="250px"></div>
+    </div>
+    
+      <div class="main">
+
+            <div class="text">
+                <h2>SURF CLASS</h2>
+                <div class="text1"><p>실내 안전교육 및 이론강습(30분)+실외 지상연습(30분)+수중강습(1시간) = 총 2시간 소요<br>
+                    보드+슈트+샤워 포함 별도의 추가금 없음 강습후 오후 6시 까지 프리서핑 가능<br>
+                    하조대 500m 레져존 프라이빗 해변에서 강습진행 전 타임 서핑 사진 촬영
+                    </p></div>
+
+                <div class="text2"><span>*강습은 고등학생 이상부터 가능하며,</span><span> 만 17세 미만은 보호자 동행하에 강습이 가능합니다.</span></div>
+
+                <h2>SURF RENTAL</h2>
+                <div class="text1"><p>강습인원은 렌탈료 제외 입니다.<br>
+                    렌탈은 3시간 기준이며 평일이나 비수기 등 강습 렌탈 인원이 적을시 해수욕장 폐장시간(오후6시)까지 이용이 가능합니다.<br>
+                    강습을 수료하지 않으면 장비 대여가 불가능 합니다. (샤워 및 타올이 포함된 금액입니다)</p></div>
+              </div>
+
+              <div class="button">
+                <a href="#">CLASS 예약하기</a>
+
+                <a href="#">RENTAL 예약하기</a>
+              </div>
+
+      </div>
+    
+      <div class="footer"></div>
+      <div class="footersns">
+        <div class="sns"> <a href="https://www.instagram.com/singlefin_aleworks/"><img src="https://i.postimg.cc/cHnTz14K/insta.png"></a> </div>
+        <div class="sns"> <a href="https://map.naver.com/p/entry/place/37160730?c=15.00,0,0,0,dh"><img src="https://i.postimg.cc/t4zhYZ7t/Rectangle-162.png"></a> </div>
+      </div>
+      <p class="footertext">이용안내 - 예약 / 단체석 / 주차 / 포장 / 무선 인터넷 / 애완동물 동반 / 남,녀 화장실 구분
+        <br>0507-1465-1175</p>
+</body>
+</html>
